@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/ekimyazilimfe/release-it-test/compare/0.2.1...0.2.2) (2025-04-14)
+
+
+### Bug Fixes
+
+* **style:** blabla ([9e2ccc1](https://github.com/ekimyazilimfe/release-it-test/commit/9e2ccc192230980fd3064bfdd9a349181e9f7b3d))
+
 ## [0.2.1](https://github.com/ekimyazilimfe/release-it-test/compare/0.2.0...0.2.1) (2025-04-14)
 
 

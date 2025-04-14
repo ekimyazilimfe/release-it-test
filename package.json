@@ -1,6 +1,6 @@
 {
   "name": "project1",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -26,7 +26,7 @@
   },
   "release-it": {
     "$schema": "https://unpkg.com/release-it/schema/release-it.json",
-    "github":{
+    "github": {
       "release": true
     },
     "plugins": {

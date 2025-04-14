@@ -7,7 +7,7 @@ export default function FilterOptions(){
     const router = useRouter();
     return(
         <div>
-            <div className="bg-card rounded-md px-2 py-4 ">
+            <div className="bg-card rounded-md dark:bg-card-foreground px-2 py-4 ">
                 <form className="flex justify-between items-center divide-x divide-muted" onSubmit={(e) => {
                     e.preventDefault();
                     const formData = new FormData(e.target);

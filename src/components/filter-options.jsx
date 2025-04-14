@@ -1,8 +1,10 @@
 "use client"
 import { MapPin, Search } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Jobs from "@/data/jobs.json";
 
 export default function FilterOptions(){
+    const locations = new Set(Jobs.map(job => job.location));
     const searchParams = useSearchParams();
     const router = useRouter();
     return(
@@ -16,12 +18,16 @@ export default function FilterOptions(){
 
                     const params = new URLSearchParams(searchParams);
 
+                    if(!formObj.isFull) params.delete("isFull")
+
                     for (const key in formObj) {
                         if (Object.prototype.hasOwnProperty.call(formObj, key)) {
                             const value = formObj[key];
 
                             params.set(key, value)
-                            if(key === "location" && value === ""){
+                            console.log(key);
+                            
+                            if(value === ""){
                                 params.delete(key);
                             }
                             
@@ -40,11 +46,11 @@ export default function FilterOptions(){
                         <MapPin />
                         <select className="w-full" name="location" id="" defaultValue={""}>
                             <option value="">Filter By Location</option>
-                            <option value="asd">Test</option>
-                            <option value="asd">Test</option>
-                            <option value="asd">Test</option>
-                            <option value="asd">Test</option>
-                            <option value="asd">Test</option>
+                            {locations && [...locations].map((location, index) => {
+                                return(
+                                    <option key={index} value={location}>{location}</option>
+                                )
+                            })}
                         </select>
                     </div>
                     <div className="inline-flex w-full px-1 items-center gap-1">

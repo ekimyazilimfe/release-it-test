@@ -1,10 +1,13 @@
+"use client"
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function SingleJobCard({
     job
 }){
+    const router = useRouter();
     return(
-        <div className="bg-card relative py-7 px-5 mt-10">
+        <div onClick={() => router.push(job.id.toString())} className="bg-card cursor-pointer relative py-7 px-5 mt-10">
             <div className="w-8 h-8 -top-5 absolute rounded-lg p-1 bg-black">
                 <Image src={"/vercel.svg"} width={50} height={50} className="object-cover" alt="vercel icon" />
             </div>

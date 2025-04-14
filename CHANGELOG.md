@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.2.3-0](https://github.com/ekimyazilimfe/release-it-test/compare/0.2.2...0.2.3-0) (2025-04-14)
+
 ## [0.2.2](https://github.com/ekimyazilimfe/release-it-test/compare/0.2.1...0.2.2) (2025-04-14)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/ekimyazilimfe/release-it-test/compare/0.2.0...0.2.1) (2025-04-14)
+
+
+### Bug Fixes
+
+* **style:** hatalı stil düzeltildi ([803b1ac](https://github.com/ekimyazilimfe/release-it-test/commit/803b1acf8e8b7c4ac92f6bd51a5676ba7df2c77a))
+
 # 0.2.0 (2025-04-14)
 
 

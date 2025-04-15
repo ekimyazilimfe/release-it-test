@@ -21,10 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-accent antialiased`}
       >
-        <Header />
-        <main className="container mx-auto px-4">
+          <div className="relative bg-app-purple rounded-bl-[85px] h-32">
+          <Header />
+          </div>
+        <main className="max-w-6xl mx-auto">
           {children}
         </main>
       </body>
